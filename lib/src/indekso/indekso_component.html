@@ -1,0 +1,12 @@
+<div class="listo">
+    <table>
+        <tr>
+            <th>Vorto</th>
+            <th>Signifo</th>
+        </tr>
+        <tr *ngFor="let vorto of vortoj">
+            <td><a [routerLink]="vorto.vorto">{{ normaligi(vorto.vorto) }}</a></td>
+            <td>{{ vorto.signifo }}</td>
+        </tr>
+    </table>
+</div>
